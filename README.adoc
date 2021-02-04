@@ -17,7 +17,7 @@ Server-side application is based on Node.js. It is node project, but in essence 
 •	graphql – used for testing purposes
 •	mysql – node.js driver for mysql
 •	cors –package for providing a Connect/Express middleware. Enables Cross-Origin Resource Sharing (CORS).
- 
+
 Client
 Client is a React web application. It uses React Apollo to fetch data from GraphQL server (Node.js Server previously described). State management and other React features are realized via hooks. It also uses bootstrap capabilities. The popular front-end framework React Bootstrap is used. Also reactstrap is used for some components.
 There are two roles: customer and waiter. Waiter must be authenticated using username and password.
