@@ -3,7 +3,7 @@ Small Cafe
 Introduction
 System for a small café will be presented here. It uses Client-server architecture along with a database.  
 
-Database
+Database.
 Database is realized via MySQL. It has 4 tables with the following purposes:
 •	article – List of articles and prices per article. Articles can be temporarily deactivated.
 •	employee – email and password for logging employed waiters.
@@ -11,13 +11,13 @@ Database is realized via MySQL. It has 4 tables with the following purposes:
 •	articleinorder – His parent table is one guestorder. Contains articles in guest order. It contains detail of an article in list of articles which guest ordered.
 A script smallcafedb.sql  for creating a database is included within project files.
 
-Server
+Server.
 Server-side application is based on Node.js. It is node project, but in essence it is Representational State Transfer (REST) API via HTTP. It allows us usage of GraphQL, which is a query language for APIs and a runtime for executing queries on data which is stored in MySQL database. On server there are following features:
 •	express – used for creating and hosting web application on node.
 •	graphql – used for testing purposes
 •	mysql – node.js driver for mysql
 •	cors –package for providing a Connect/Express middleware. Enables Cross-Origin Resource Sharing (CORS).
 
-Client
+Client.
 Client is a React web application. It uses React Apollo to fetch data from GraphQL server (Node.js Server previously described). State management and other React features are realized via hooks. It also uses bootstrap capabilities. The popular front-end framework React Bootstrap is used. Also reactstrap is used for some components.
 There are two roles: customer and waiter. Waiter must be authenticated using username and password.
